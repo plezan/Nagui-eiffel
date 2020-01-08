@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using TMPro;
+using Assets.Scripts.Init;
 
 public class Instanciate : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Instanciate : MonoBehaviour
     /// Places to instanciate
     /// </summary>
     public DoorsMonoBehaviour doorsMonoBehaviour;
+    /// <summary>
+    /// Question to display
+    /// </summary>
+    public TextMesh questionText;
     #endregion
 
     //Start is called before the first frame update
@@ -24,8 +29,11 @@ public class Instanciate : MonoBehaviour
     {
         if (this.doorsMonoBehaviour != null)
         {
-            Question question = this.GetQuestion();
+            Question question = QuestionInit.GetRandomQuestion();
             ICollection<AnswerMonoBehaviour> usedAnswerMonoBehaviours = new List<AnswerMonoBehaviour>();
+
+            //Set the question to display
+            questionText.text = question.Value;
 
             foreach (var doorMonoBehaviour in this.doorsMonoBehaviour.doors)
             {
@@ -82,23 +90,5 @@ public class Instanciate : MonoBehaviour
         return result;
     }
 
-    /// <summary>
-    /// Get a new question example
-    /// </summary>
-    /// <returns></returns>
-    private Question GetQuestion()
-    {
-        AnswerMonoBehaviour AnswerMonoBehaviour1 = new AnswerMonoBehaviour() { Value = "Réponse A", Id = 0 };
-        AnswerMonoBehaviour AnswerMonoBehaviour2 = new AnswerMonoBehaviour() { Value = "Réponse B", Id = 1 };
-        AnswerMonoBehaviour AnswerMonoBehaviour3 = new AnswerMonoBehaviour() { Value = "Réponse C", Id = 2 };
-        AnswerMonoBehaviour AnswerMonoBehaviour4 = new AnswerMonoBehaviour() { Value = "Réponse D", Id = 3 };
 
-        return new Question()
-        {
-            GoodAnswer = AnswerMonoBehaviour2,
-            GoodAnswerId = AnswerMonoBehaviour2.Id,
-            Value = "Question 1",
-            Answers = new List<AnswerMonoBehaviour>() { AnswerMonoBehaviour1, AnswerMonoBehaviour2, AnswerMonoBehaviour3, AnswerMonoBehaviour4 }
-        };
-    }
 }
