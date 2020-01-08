@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Invector.CharacterController;
+
+public class reverseTrigger : MonoBehaviour
+{
+    public GameObject _camera;
+    public GameObject _perso;
+    private vThirdPersonCamera _vThirdPersonCamera;
+    private vThirdPersonInput _vThirdPersonInput;
+    // Start is called before the first frame update
+    void Start()
+    {
+        _vThirdPersonCamera = _camera.GetComponent<vThirdPersonCamera>();
+        _vThirdPersonInput = _perso.GetComponent<vThirdPersonInput>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            _vThirdPersonInput.setReversed(!_vThirdPersonInput.getReversed());
+            _vThirdPersonCamera.setReversed(!_vThirdPersonCamera.getReversed());
+        }
+    }
+}
