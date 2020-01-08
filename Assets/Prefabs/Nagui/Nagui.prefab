@@ -14,32 +14,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!65 &2103187338751098579
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2621579635105411425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.047205925, z: 1}
-  m_Center: {x: 0, y: 0.030704498, z: 0}
---- !u!114 &-3932957221562652704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2621579635105411425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d4b5bb8ed3e0a34e919d7cc12ba3bfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audience: {fileID: 0}
 --- !u!54 &1056848774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70,6 +44,32 @@ CapsuleCollider:
   m_Height: 1.857913
   m_Direction: 1
   m_Center: {x: 0.0021582246, y: 0.8486953, z: 0}
+--- !u!65 &2103187338751098579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621579635105411425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.047205925, z: 1}
+  m_Center: {x: 0, y: 0.030704498, z: 0}
+--- !u!114 &-3932957221562652704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2621579635105411425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4b5bb8ed3e0a34e919d7cc12ba3bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audience: {fileID: 0}
 --- !u!1001 &6287119499209762920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,6 +77,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5712475318055978420, guid: 0f27d6f072f37624bbba8c1674cb8454,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd52ae5157676424282d3f694bccd7c1, type: 2}
     - target: {fileID: -4216859302048453862, guid: 0f27d6f072f37624bbba8c1674cb8454,
         type: 3}
       propertyPath: m_LocalPosition.x
