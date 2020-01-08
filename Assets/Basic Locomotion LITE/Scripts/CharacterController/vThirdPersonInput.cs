@@ -48,10 +48,7 @@ namespace Invector.CharacterController
             return this.isReversed;
         }
 
-<<<<<<< HEAD:Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonInput.cs
 
-=======
->>>>>>> feature/doors-opening:Assets/Downloaded/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonInput.cs
         protected virtual void Start()
         {
             CharacterInit();
