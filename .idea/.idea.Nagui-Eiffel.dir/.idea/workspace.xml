@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028507b9-d85a-4704-9833-9f63a28f6e84" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Models/eiffel-merged.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/eiffel-merged.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/eiffel-top.3ds" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/eiffel-top.3ds" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/eiffel.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/eiffel.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/pioche.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/pioche.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nagui-Eiffel.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nagui-Eiffel.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Camera/vThirdPersonCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonAnimator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonMotor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/vComment.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/vDestroyGameObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/vExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/vPickupItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/eiffel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/eiffel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +24,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Camera/vThirdPersonCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Basic Locomotion LITE/Scripts/Generic/vComment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/rayShooter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578401434192</updated>
       <workItem from="1578401438601" duration="645000" />
-      <workItem from="1578402103259" duration="599000" />
+      <workItem from="1578402103259" duration="2874000" />
     </task>
     <servers />
   </component>
@@ -66,6 +82,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="449" y="169" width="1022" height="737" key="SettingsEditor" timestamp="1578401577362">
       <screen x="0" y="27" width="1920" height="1015" />
