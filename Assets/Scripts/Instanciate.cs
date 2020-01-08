@@ -35,6 +35,7 @@ public class Instanciate : MonoBehaviour
             //Set the question to display
             questionText.text = question.Value;
 
+
             foreach (var doorMonoBehaviour in this.doorsMonoBehaviour.doors)
             {
                 //If there is an available AnswerMonoBehaviour

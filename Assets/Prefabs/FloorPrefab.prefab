@@ -159,6 +159,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5545157124819478491}
   - component: {fileID: 5545157124819478488}
+  - component: {fileID: 2831530055386417037}
+  - component: {fileID: 4815334784825671392}
   m_Layer: 0
   m_Name: FloorPrefab
   m_TagString: Untagged
@@ -174,7 +176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5545157124819478489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.02, y: 1.071658, z: -0.7}
+  m_LocalPosition: {x: -2.02, y: 0.54, z: -0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5545157125356923701}
@@ -198,6 +200,31 @@ MonoBehaviour:
     type: 3}
   doorsMonoBehaviour: {fileID: 5545157125356923700}
   questionText: {fileID: 3195339565881830045}
+--- !u!65 &2831530055386417037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5545157124819478489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.569001, y: 3.79101, z: 15.6368}
+  m_Center: {x: 1.4006495, y: 1.395505, z: 0.8608813}
+--- !u!114 &4815334784825671392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5545157124819478489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea7378f44d5193544b5f5e0a43b22cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5545157125356923722
 GameObject:
   m_ObjectHideFlags: 0
