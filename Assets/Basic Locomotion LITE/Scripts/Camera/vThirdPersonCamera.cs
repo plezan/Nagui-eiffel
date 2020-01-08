@@ -26,12 +26,12 @@ public class vThirdPersonCamera : MonoBehaviour
 
     public Transform target;
     [Tooltip("Lerp speed between Camera States")]
-    public float smoothCameraRotation = 12f;    
+    public float smoothCameraRotation = 12f;
     [Tooltip("What layer will be culled")]
-    public LayerMask cullingLayer = 1 << 0;                
+    public LayerMask cullingLayer = 1 << 0;
     [Tooltip("Debug purposes, lock the camera behind the character for better align the states")]
     public bool lockCamera;
-    
+
     public float rightOffset = 0f;
     public float defaultDistance = 2.5f;
     public float height = 1.4f;
@@ -39,7 +39,7 @@ public class vThirdPersonCamera : MonoBehaviour
     public float xMouseSensitivity = 3f;
     public float yMouseSensitivity = 3f;
     public float yMinLimit = -40f;
-    public float yMaxLimit = 80f; 
+    public float yMaxLimit = 80f;
     #endregion
 
     #region hide properties    
@@ -54,7 +54,7 @@ public class vThirdPersonCamera : MonoBehaviour
     public Transform currentTarget;
     [HideInInspector]
     public Vector2 movementSpeed;
-   
+
     private Transform targetLookAt;
     private Vector3 currentTargetPos;
     private Vector3 lookPoint;
@@ -73,8 +73,18 @@ public class vThirdPersonCamera : MonoBehaviour
     private float xMaxLimit = 360f;
     private float cullingHeight = 0.2f;
     private float cullingMinDist = 0.1f;
+    private bool isReversed = false;
 
     #endregion
+
+    public void setReversed(bool b)
+    {
+        this.isReversed = b;
+    }
+    public bool getReversed()
+    {
+        return this.isReversed;
+    }
 
     void Start()
     {
@@ -146,8 +156,16 @@ public class vThirdPersonCamera : MonoBehaviour
     public void RotateCamera(float x, float y)
     {
         // free rotation 
-        mouseX += x * xMouseSensitivity;
-        mouseY -= y * yMouseSensitivity;
+        if (isReversed)
+        {
+            mouseX += -x * xMouseSensitivity;
+            mouseY -= -y * yMouseSensitivity;
+        }
+        else
+        {
+            mouseX += x * xMouseSensitivity;
+            mouseY -= y * yMouseSensitivity;
+        }
 
         movementSpeed.x = x;
         movementSpeed.y = -y;
