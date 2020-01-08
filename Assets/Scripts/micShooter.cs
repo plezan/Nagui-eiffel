@@ -17,7 +17,7 @@ public class micShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
             var localOffset = new Vector3(0.3f, 1.4f, 0);
             var worldOffset = transform.rotation * localOffset;
