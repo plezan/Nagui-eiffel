@@ -32,6 +32,8 @@ public class Nagui : MonoBehaviour
             {
                 this.KillMe();
             }
+            Destroy(collision.gameObject);
+
         }
         else
         {
