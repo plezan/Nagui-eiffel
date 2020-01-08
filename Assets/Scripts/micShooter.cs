@@ -44,7 +44,7 @@ public class micShooter : MonoBehaviour
 
     public void decrementMic()
     {
-        if (this.micLimit == 0)
+        if (this.micLimit > 0)
         {
             this.micLimit -= 1;
         }
