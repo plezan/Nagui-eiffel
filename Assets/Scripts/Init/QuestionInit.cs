@@ -16,7 +16,7 @@ namespace Assets.Scripts.Init
         /// <summary>
         /// Questions
         /// </summary>
-        private static List<Question> questions;
+        public static List<Question> questions;
 
         /// <summary>
         /// Init the questions

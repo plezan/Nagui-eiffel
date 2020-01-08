@@ -34,7 +34,18 @@ namespace Invector.CharacterController
 
         protected vThirdPersonController cc;                // access the ThirdPersonController component                
 
+        private bool isReversed = false;
+
         #endregion
+
+        public void setReversed(bool b)
+        {
+            this.isReversed = b;
+        }
+        public bool getReversed()
+        {
+            return this.isReversed;
+        }
 
         protected virtual void Start()
         {
@@ -90,9 +101,9 @@ namespace Invector.CharacterController
         #region Basic Locomotion Inputs      
 
         protected virtual void MoveCharacter()
-        {            
-            cc.input.x = Input.GetAxis(horizontalInput);
-            cc.input.y = Input.GetAxis(verticallInput);
+        {
+            cc.input.x = (isReversed) ? -Input.GetAxis(horizontalInput) : Input.GetAxis(horizontalInput);
+            cc.input.y = (isReversed) ? -Input.GetAxis(verticallInput) : Input.GetAxis(verticallInput);
         }
 
         protected virtual void StrafeInput()
