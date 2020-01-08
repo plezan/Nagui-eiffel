@@ -29,7 +29,11 @@ namespace Assets.Scripts.Models
         /// <summary>
         /// Identifier of the good answer
         /// </summary>
-        public int GoodAnswerId { get; set; }
+        public string GoodAnswerId { get; set; }
+        /// <summary>
+        /// Title of the media to play with the question
+        /// </summary>
+        public string MediaTitle { get; set; }
         #endregion
     }
 }
