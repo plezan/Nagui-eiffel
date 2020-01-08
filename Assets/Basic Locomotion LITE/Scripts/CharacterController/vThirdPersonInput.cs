@@ -35,7 +35,6 @@ namespace Invector.CharacterController
         protected vThirdPersonController cc;                // access the ThirdPersonController component                
         private bool isReversed = false;
 
-        private bool isReversed = false;
 
         #endregion
 
@@ -104,16 +103,9 @@ namespace Invector.CharacterController
 
         protected virtual void MoveCharacter()
         {
-<<<<<<< HEAD:Assets/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonInput.cs
-            
             cc.input.x = (isReversed) ? -Input.GetAxis(horizontalInput) : Input.GetAxis(horizontalInput);
             cc.input.y = (isReversed) ? -Input.GetAxis(verticallInput) : Input.GetAxis(verticallInput);
-          
-=======
-            cc.input.x = (isReversed) ? -Input.GetAxis(horizontalInput) : Input.GetAxis(horizontalInput);
-            cc.input.y = (isReversed) ? -Input.GetAxis(verticallInput) : Input.GetAxis(verticallInput);
->>>>>>> feature/doors-opening:Assets/Downloaded/Basic Locomotion LITE/Scripts/CharacterController/vThirdPersonInput.cs
-        }
+         }
 
         protected virtual void StrafeInput()
         {
