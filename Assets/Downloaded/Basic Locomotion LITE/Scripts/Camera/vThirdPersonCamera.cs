@@ -73,8 +73,18 @@ public class vThirdPersonCamera : MonoBehaviour
     private float xMaxLimit = 360f;
     private float cullingHeight = 0.2f;
     private float cullingMinDist = 0.1f;
+    private bool isReversed = false;
 
     #endregion
+
+    public void setReversed(bool b)
+    {
+        this.isReversed = b;
+    }
+    public bool getReversed()
+    {
+        return this.isReversed;
+    }
 
     void Start()
     {
@@ -146,8 +156,16 @@ public class vThirdPersonCamera : MonoBehaviour
     public void RotateCamera(float x, float y)
     {
         // free rotation 
-        mouseX += x * xMouseSensitivity;
-        mouseY -= y * yMouseSensitivity;
+        if (isReversed)
+        {
+            mouseX += -x * xMouseSensitivity;
+            mouseY -= -y * yMouseSensitivity;
+        }
+        else
+        {
+            mouseX += x * xMouseSensitivity;
+            mouseY -= y * yMouseSensitivity;
+        }
 
         movementSpeed.x = x;
         movementSpeed.y = -y;

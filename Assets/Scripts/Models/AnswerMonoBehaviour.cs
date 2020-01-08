@@ -13,7 +13,7 @@ namespace Assets.Scripts.Models
         /// <summary>
         /// Answer identifier
         /// </summary>
-        public int Id { get; set; }
+        public string Id { get; set; } = Guid.NewGuid().ToString();
         /// <summary>
         /// Answer to display
         /// </summary>
