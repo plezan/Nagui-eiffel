@@ -34,7 +34,8 @@ public class Instanciate : MonoBehaviour
 
             //Set the question to display
             questionText.text = question.Value;
-
+            AudioSource audioSource = this.gameObject.AddComponent<AudioSource>();
+            audioSource.clip = Resources.Load<AudioClip>($"Sounds/{question.MediaTitle}");
 
             foreach (var doorMonoBehaviour in this.doorsMonoBehaviour.doors)
             {

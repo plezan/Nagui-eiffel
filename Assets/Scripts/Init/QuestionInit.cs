@@ -36,7 +36,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q1a1,
                 GoodAnswerId = q1a1.Id,
-                MediaTitle = "Despacito.mp3",
+                MediaTitle = "Despacito",
                 Value = "Muéstrame el camino que ..."
             };
             #endregion
@@ -54,7 +54,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q2a1,
                 GoodAnswerId = q2a1.Id,
-                MediaTitle = "Que Calor.mp3",
+                MediaTitle = "Que Calor",
                 Value = "Pero se aprendió la canción a la..."
             };
             #endregion
@@ -72,7 +72,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q3a1,
                 GoodAnswerId = q3a1.Id,
-                MediaTitle = "Con Calma.mp3",
+                MediaTitle = "Con Calma",
                 Value = "Es un asesina, cuando baila quiere que to' el mundo la ..."
             };
             #endregion
@@ -90,7 +90,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q4a1,
                 GoodAnswerId = q4a1.Id,
-                MediaTitle = "Bomba.mp3",
+                MediaTitle = "Bomba",
                 Value = "Una mano en la ..."
             };
             #endregion
@@ -108,7 +108,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q5a1,
                 GoodAnswerId = q5a1.Id,
-                MediaTitle = "Loco Contigo.mp3",
+                MediaTitle = "Loco Contigo",
                 Value = "Ram - pa - pa - pam - pam con un booty..."
             };
             #endregion
@@ -126,7 +126,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q6a1,
                 GoodAnswerId = q6a1.Id,
-                MediaTitle = "La Camisa Negra.mp3",
+                MediaTitle = "La Camisa Negra",
                 Value = "Y fue pura todita tu..."
             };
             #endregion
@@ -144,7 +144,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q7a1,
                 GoodAnswerId = q7a1.Id,
-                MediaTitle = "Bamboleo.mp3",
+                MediaTitle = "Bamboleo",
                 Value = "Amor de en el..."
             };
             #endregion
@@ -162,7 +162,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q8a1,
                 GoodAnswerId = q8a1.Id,
-                MediaTitle = "Porque Te Vas.mp3",
+                MediaTitle = "Porque Te Vas",
                 Value = "Porque te vas..."
             };
             #endregion
@@ -180,7 +180,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q9a1,
                 GoodAnswerId = q9a1.Id,
-                MediaTitle = "baila Bamba.mp3",
+                MediaTitle = "baila Bamba",
                 Value = "Para bailar la bamba se necesita una poca de..."
             };
             #endregion
@@ -198,7 +198,7 @@ namespace Assets.Scripts.Init
                 },
                 GoodAnswer = q10a1,
                 GoodAnswerId = q10a1.Id,
-                MediaTitle = "Letras.mp3",
+                MediaTitle = "Letras",
                 Value = "Ella es un laberinto ..."
             };
             #endregion
